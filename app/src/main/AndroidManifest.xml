@@ -16,11 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.learnfinnish.NumbersActivity"
-            android:label="@string/category_numbers"/>
-        <activity android:name="com.example.android.learnfinnish.FamilyMembersActivity" />
-        <activity android:name="com.example.android.learnfinnish.ColorsActivity" />
-        <activity android:name="com.example.android.learnfinnish.PhrasesActivity"/>
+        <activity
+            android:name="com.example.android.learnfinnish.NumbersActivity"
+            android:label="@string/category_numbers" />
+        <activity
+            android:name="com.example.android.learnfinnish.FamilyMembersActivity"
+            android:label="@string/category_family" />
+        <activity
+            android:name="com.example.android.learnfinnish.ColorsActivity"
+            android:label="@string/category_colors" />
+        <activity
+            android:name="com.example.android.learnfinnish.PhrasesActivity"
+            android:label="@string/category_phrases" />
     </application>
 
 </manifest>
