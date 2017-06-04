@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NumbersActivity.class);
         startActivity(intent);
     }
+
+    public void openFamilyActivity (View view) {
+        Intent intent = new Intent(this, FamilyMembersActivity.class);
+        startActivity(intent);
+    }
 }

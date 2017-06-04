@@ -20,7 +20,8 @@
         android:id="@+id/family"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
-        android:text="@string/category_family" />
+        android:text="@string/category_family"
+        android:onClick="openFamilyActivity"/>
 
     <TextView
         android:id="@+id/colors"
