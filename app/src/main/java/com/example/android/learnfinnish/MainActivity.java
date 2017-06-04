@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FamilyMembersActivity.class);
         startActivity(intent);
     }
+
+    public void openColorsActivity (View view) {
+        Intent intent = new Intent(this, ColorsActivity.class);
+        startActivity(intent);
+    }
 }
