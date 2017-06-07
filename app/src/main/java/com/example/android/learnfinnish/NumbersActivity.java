@@ -2,8 +2,8 @@ package com.example.android.learnfinnish;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,18 +16,19 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
         ArrayList<String> numberWords = new ArrayList<>();
-        String[] words = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+        String[] words = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+                "eleven", "twelve", "thirteen", "fourteen", "fiveteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
         numberWords.addAll(Arrays.asList(words));
 
-        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootview);
 
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, numberWords);
 
-        for (int index = 0; index < numberWords.size(); index++) {
-            TextView wordView = new TextView(this);
-            wordView.setText(numberWords.get(index));
-            rootView.addView(wordView);
+        ListView listView = (ListView) findViewById(R.id.list);
 
+        if (listView != null) {
+            listView.setAdapter(itemsAdapter);
         }
+
 
     }
 }
