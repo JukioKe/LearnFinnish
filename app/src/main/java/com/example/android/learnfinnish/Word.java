@@ -1,5 +1,7 @@
 package com.example.android.learnfinnish;
 
+//Word object
+
 public class Word {
     private String finTransalation;
     private String engTranslation;
@@ -13,7 +15,9 @@ public class Word {
         return engTranslation;
     }
 
-    public String getFinTransalation() {
+    public String getFinTranslation() {
         return finTransalation;
     }
+
+
 }
