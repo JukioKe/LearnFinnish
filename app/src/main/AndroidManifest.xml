@@ -26,6 +26,12 @@
             android:name="com.example.android.learnfinnish.ColorsActivity"
             android:label="@string/category_colors" />
         <activity
+            android:name="com.example.android.learnfinnish.SportsActivity"
+            android:label="@string/category_sports" />
+        <activity
+            android:name="com.example.android.learnfinnish.FeelingsActivity"
+            android:label="@string/category_feelings" />
+        <activity
             android:name="com.example.android.learnfinnish.PhrasesActivity"
             android:label="@string/category_phrases" />
     </application>
