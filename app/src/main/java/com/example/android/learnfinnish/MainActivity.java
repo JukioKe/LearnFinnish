@@ -76,6 +76,36 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+        // Find the View that shows the sports category
+        TextView sports = (TextView) findViewById(R.id.sports);
+
+        // Set a click listener on that View
+        if (sports != null) {
+            sports.setOnClickListener(new View.OnClickListener() {
+                // The code in this method will be executed when the Sports View is clicked on.
+                @Override
+                public void onClick(View view) {
+                    Intent sportsIntent = new Intent(MainActivity.this, SportsActivity.class);
+                    startActivity(sportsIntent);
+                }
+            });
+        }
+
+        // Find the View that shows the feelings category
+        TextView feelings = (TextView) findViewById(R.id.feelings);
+
+        // Set a click listener on that View
+        if (feelings != null) {
+            feelings.setOnClickListener(new View.OnClickListener() {
+                // The code in this method will be executed when the Feelings View is clicked on.
+                @Override
+                public void onClick(View view) {
+                    Intent feelingsIntent = new Intent(MainActivity.this, FeelingsActivity.class);
+                    startActivity(feelingsIntent);
+                }
+            });
+        }
+
     }
 
 

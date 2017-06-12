@@ -39,7 +39,7 @@ public class FamilyMembersActivity extends AppCompatActivity {
 
         WordAdapter adapter = new WordAdapter(this, numberWords);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) findViewById(R.id.word_list_view);
 
         if (listView != null) {
             listView.setAdapter(adapter);
