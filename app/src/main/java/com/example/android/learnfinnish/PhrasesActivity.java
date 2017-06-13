@@ -13,31 +13,36 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ArrayList<Word> numberWords = new ArrayList<Word>();
+        ArrayList<Word> phrases = new ArrayList<Word>();
 
-        numberWords.add(new Word("yksi", "one"));
-        numberWords.add(new Word("kaksi", "two"));
-        numberWords.add(new Word("kolme", "three"));
-        numberWords.add(new Word("neljä", "four"));
-        numberWords.add(new Word("viisi", "five"));
-        numberWords.add(new Word("kuusi", "six"));
-        numberWords.add(new Word("seitsemän", "seven"));
-        numberWords.add(new Word("kahdeksan", "eight"));
-        numberWords.add(new Word("yhdeksän", "nine"));
-        numberWords.add(new Word("kymmenen", "ten"));
-        numberWords.add(new Word("yksitoista", "eleven"));
-        numberWords.add(new Word("kaksitoista", "twelve"));
-        numberWords.add(new Word("kolmetoista", "thirteen"));
-        numberWords.add(new Word("neljätoista", "fourteen"));
-        numberWords.add(new Word("viisitoista", "fiveteen"));
-        numberWords.add(new Word("kuusitoista", "sixteen"));
-        numberWords.add(new Word("seitsemäntoista", "seventeen"));
-        numberWords.add(new Word("kahdeksantoista", "eighteen"));
-        numberWords.add(new Word("yhdeksäntoista", "nineteen"));
-        numberWords.add(new Word("kaksikymmentä", "twenty"));
+        phrases.add(new Word("Miten voit?", "how are you?"));
+        phrases.add(new Word("Voin hyvin", "I'm fine"));
+        phrases.add(new Word("Minne olet menossa?", "Where are you going?"));
+        phrases.add(new Word("Oletko tulossa?", "Are you coming?"));
+        phrases.add(new Word("Kyllä, olen tulossa", "Yes, I'm coming"));
+        phrases.add(new Word("Mennään", "Let's go"));
+        phrases.add(new Word("Tule tänne", "Come here"));
+        phrases.add(new Word("Mikä on nimesi?", "What's your name?"));
+        phrases.add(new Word("Nimeni on...", "My name is..."));
+        phrases.add(new Word("Missä asut?", "Where are you living?"));
+        phrases.add(new Word("Saanko oluen, kiitos?", "Can I have beer, please?"));
+        phrases.add(new Word("Kiitoksia paljon", "Thank you so much"));
+        phrases.add(new Word("Anteeksi", "Excuse me"));
+        phrases.add(new Word("Mitä mieltä olet?", "What do you think?"));
+        phrases.add(new Word("Minä opettelen suomen kieltä", "I'm learning Finnish"));
+        phrases.add(new Word("En ymmärrä", "I don't understand"));
+        phrases.add(new Word("Voisitko toistaa?", "Could you repeat that, please?"));
+        phrases.add(new Word("Kiitoksia", "Thank you"));
+        phrases.add(new Word("yhdeksäntoista", "nineteen"));
+        phrases.add(new Word("Mitä tarkoitat?", "What do you mean?"));
+        phrases.add(new Word("Hauska tavata", "Nice to meet you"));
+        phrases.add(new Word("Mistä olet kotoisin?", "Where are you from?"));
+        phrases.add(new Word("Mitä teet?", "What do you do?"));
+        phrases.add(new Word("Voinko olla avuksi?", "Can I help you?"));
+        phrases.add(new Word("Paljonko kello on?", "What's the time is?"));
 
 
-        WordAdapter adapter = new WordAdapter(this, numberWords);
+        WordAdapter adapter = new WordAdapter(this, phrases);
 
         ListView listView = (ListView) findViewById(R.id.word_list_view);
 

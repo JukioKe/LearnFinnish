@@ -20,7 +20,8 @@ public class SportsActivity extends AppCompatActivity {
         sportWords.add(new Word("laukaise, vedä", "shoot"));
         sportWords.add(new Word("katso", "look"));
         sportWords.add(new Word("joukkue", "team"));
-        sportWords.add(new Word("vieras joukkue, vastustaja", "away team"));
+        sportWords.add(new Word("vierasjoukkue, vastustaja", "away team"));
+        sportWords.add(new Word("kotijoukkue", "home team"));
         sportWords.add(new Word("pelata", "play"));
         sportWords.add(new Word("voitto", "victory"));
         sportWords.add(new Word("tappio", "defeat"));

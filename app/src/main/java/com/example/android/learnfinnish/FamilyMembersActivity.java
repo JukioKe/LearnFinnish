@@ -13,31 +13,35 @@ public class FamilyMembersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ArrayList<Word> numberWords = new ArrayList<Word>();
+        ArrayList<Word> familyWords = new ArrayList<Word>();
 
-        numberWords.add(new Word("yksi", "one"));
-        numberWords.add(new Word("kaksi", "two"));
-        numberWords.add(new Word("kolme", "three"));
-        numberWords.add(new Word("neljä", "four"));
-        numberWords.add(new Word("viisi", "five"));
-        numberWords.add(new Word("kuusi", "six"));
-        numberWords.add(new Word("seitsemän", "seven"));
-        numberWords.add(new Word("kahdeksan", "eight"));
-        numberWords.add(new Word("yhdeksän", "nine"));
-        numberWords.add(new Word("kymmenen", "ten"));
-        numberWords.add(new Word("yksitoista", "eleven"));
-        numberWords.add(new Word("kaksitoista", "twelve"));
-        numberWords.add(new Word("kolmetoista", "thirteen"));
-        numberWords.add(new Word("neljätoista", "fourteen"));
-        numberWords.add(new Word("viisitoista", "fiveteen"));
-        numberWords.add(new Word("kuusitoista", "sixteen"));
-        numberWords.add(new Word("seitsemäntoista", "seventeen"));
-        numberWords.add(new Word("kahdeksantoista", "eighteen"));
-        numberWords.add(new Word("yhdeksäntoista", "nineteen"));
-        numberWords.add(new Word("kaksikymmentä", "twenty"));
+        familyWords.add(new Word("isä", "father"));
+        familyWords.add(new Word("äiti", "mother"));
+        familyWords.add(new Word("poika", "son"));
+        familyWords.add(new Word("tytär", "daughter"));
+        familyWords.add(new Word("veli", "brother"));
+        familyWords.add(new Word("isoveli", "big brother"));
+        familyWords.add(new Word("pikkuveli", "younger brother"));
+        familyWords.add(new Word("isosisko", "older sister"));
+        familyWords.add(new Word("pikkusisko", "younger sister"));
+        familyWords.add(new Word("isovanhemmat", "grandparents"));
+        familyWords.add(new Word("isoäiti", "grandmother"));
+        familyWords.add(new Word("isoisä", "grandfather"));
+        familyWords.add(new Word("lapsenlapsi", "grandchild"));
+        familyWords.add(new Word("setä", "uncle"));
+        familyWords.add(new Word("täti", "aunt"));
+        familyWords.add(new Word("vanhempi", "parent"));
+        familyWords.add(new Word("lapsi", "child"));
+        familyWords.add(new Word("veljenpoika", "nephew"));
+        familyWords.add(new Word("veljentytär", "niece"));
+        familyWords.add(new Word("serkku", "cousin"));
+        familyWords.add(new Word("aviomies", "husband"));
+        familyWords.add(new Word("vaimo", "wife"));
+        familyWords.add(new Word("kummisetä", "godfather"));
+        familyWords.add(new Word("sukulainen", "relative"));
 
 
-        WordAdapter adapter = new WordAdapter(this, numberWords);
+        WordAdapter adapter = new WordAdapter(this, familyWords);
 
         ListView listView = (ListView) findViewById(R.id.word_list_view);
 
