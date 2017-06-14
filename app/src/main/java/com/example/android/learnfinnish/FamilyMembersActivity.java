@@ -38,6 +38,7 @@ public class FamilyMembersActivity extends AppCompatActivity {
         familyWords.add(new Word("aviomies", "husband"));
         familyWords.add(new Word("vaimo", "wife"));
         familyWords.add(new Word("kummisetä", "godfather"));
+        familyWords.add(new Word("vauva", "baby"));
         familyWords.add(new Word("sukulainen", "relative"));
 
 
