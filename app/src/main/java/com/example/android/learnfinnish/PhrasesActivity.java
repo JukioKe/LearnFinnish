@@ -33,7 +33,6 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("En ymmärrä", "I don't understand"));
         phrases.add(new Word("Voisitko toistaa?", "Could you repeat that, please?"));
         phrases.add(new Word("Kiitoksia", "Thank you"));
-        phrases.add(new Word("yhdeksäntoista", "nineteen"));
         phrases.add(new Word("Mitä tarkoitat?", "What do you mean?"));
         phrases.add(new Word("Hauska tavata", "Nice to meet you"));
         phrases.add(new Word("Mistä olet kotoisin?", "Where are you from?"));
