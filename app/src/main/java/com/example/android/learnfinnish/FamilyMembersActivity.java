@@ -15,19 +15,19 @@ public class FamilyMembersActivity extends AppCompatActivity {
 
         ArrayList<Word> familyWords = new ArrayList<Word>();
 
-        familyWords.add(new Word("isä", "father"));
-        familyWords.add(new Word("äiti", "mother"));
-        familyWords.add(new Word("poika", "son"));
-        familyWords.add(new Word("tytär", "daughter"));
-        familyWords.add(new Word("veli", "brother"));
-        familyWords.add(new Word("isoveli", "big brother"));
-        familyWords.add(new Word("pikkuveli", "younger brother"));
-        familyWords.add(new Word("isosisko", "older sister"));
-        familyWords.add(new Word("pikkusisko", "younger sister"));
+        familyWords.add(new Word("isä", "father", R.drawable.family_father));
+        familyWords.add(new Word("äiti", "mother", R.drawable.family_mother));
+        familyWords.add(new Word("poika", "son", R.drawable.family_son));
+        familyWords.add(new Word("tytär", "daughter", R.drawable.family_daughter));
+        familyWords.add(new Word("veli", "brother", R.drawable.family_son));
+        familyWords.add(new Word("isoveli", "big brother", R.drawable.family_older_brother));
+        familyWords.add(new Word("pikkuveli", "younger brother", R.drawable.family_son));
+        familyWords.add(new Word("isosisko", "older sister", R.drawable.family_older_sister));
+        familyWords.add(new Word("pikkusisko", "younger sister", R.drawable.family_daughter));
         familyWords.add(new Word("isovanhemmat", "grandparents"));
-        familyWords.add(new Word("isoäiti", "grandmother"));
-        familyWords.add(new Word("isoisä", "grandfather"));
-        familyWords.add(new Word("lapsenlapsi", "grandchild"));
+        familyWords.add(new Word("isoäiti", "grandmother", R.drawable.family_grandmother));
+        familyWords.add(new Word("isoisä", "grandfather", R.drawable.family_grandfather));
+        familyWords.add(new Word("lapsenlapsi", "grandchild", R.drawable.family_younger_brother));
         familyWords.add(new Word("setä", "uncle"));
         familyWords.add(new Word("täti", "aunt"));
         familyWords.add(new Word("vanhempi", "parent"));
