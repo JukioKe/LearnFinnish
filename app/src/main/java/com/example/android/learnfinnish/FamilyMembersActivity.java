@@ -15,6 +15,7 @@ public class FamilyMembersActivity extends AppCompatActivity {
 
         ArrayList<Word> familyWords = new ArrayList<Word>();
 
+        familyWords.add(new Word("perhe", "family", R.drawable.family_family));
         familyWords.add(new Word("isä", "father", R.drawable.family_father));
         familyWords.add(new Word("äiti", "mother", R.drawable.family_mother));
         familyWords.add(new Word("poika", "son", R.drawable.family_son));
@@ -24,22 +25,21 @@ public class FamilyMembersActivity extends AppCompatActivity {
         familyWords.add(new Word("pikkuveli", "younger brother", R.drawable.family_son));
         familyWords.add(new Word("isosisko", "older sister", R.drawable.family_older_sister));
         familyWords.add(new Word("pikkusisko", "younger sister", R.drawable.family_daughter));
-        familyWords.add(new Word("isovanhemmat", "grandparents"));
         familyWords.add(new Word("isoäiti", "grandmother", R.drawable.family_grandmother));
         familyWords.add(new Word("isoisä", "grandfather", R.drawable.family_grandfather));
-        familyWords.add(new Word("lapsenlapsi", "grandchild", R.drawable.family_younger_brother));
-        familyWords.add(new Word("setä", "uncle"));
-        familyWords.add(new Word("täti", "aunt"));
-        familyWords.add(new Word("vanhempi", "parent"));
-        familyWords.add(new Word("lapsi", "child"));
-        familyWords.add(new Word("veljenpoika", "nephew"));
-        familyWords.add(new Word("veljentytär", "niece"));
-        familyWords.add(new Word("serkku", "cousin"));
-        familyWords.add(new Word("aviomies", "husband"));
-        familyWords.add(new Word("vaimo", "wife"));
-        familyWords.add(new Word("kummisetä", "godfather"));
-        familyWords.add(new Word("vauva", "baby"));
-        familyWords.add(new Word("sukulainen", "relative"));
+        familyWords.add(new Word("lapsenlapsi", "grandchild", R.drawable.family_baby));
+        familyWords.add(new Word("setä", "uncle", R.drawable.family_uncle));
+        familyWords.add(new Word("täti", "aunt", R.drawable.family_aunt));
+        familyWords.add(new Word("vanhemmat", "parents", R.drawable.family_parents));
+        familyWords.add(new Word("lapsi", "child", R.drawable.family_daughter));
+        familyWords.add(new Word("veljenpoika", "nephew", R.drawable.family_son));
+        familyWords.add(new Word("veljentytär", "niece", R.drawable.family_daughter));
+        familyWords.add(new Word("serkku", "cousin", R.drawable.family_cousin));
+        familyWords.add(new Word("aviomies", "husband", R.drawable.family_husband));
+        familyWords.add(new Word("vaimo", "wife", R.drawable.family_wife));
+        familyWords.add(new Word("kummisetä", "godfather", R.drawable.family_godfather));
+        familyWords.add(new Word("vauva", "baby", R.drawable.family_baby));
+        familyWords.add(new Word("sukulainen", "relative", R.drawable.family_relative));
 
 
         WordAdapter adapter = new WordAdapter(this, familyWords);

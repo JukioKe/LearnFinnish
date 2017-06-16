@@ -18,6 +18,7 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> numberWords = new ArrayList<>();
 
+        numberWords.add(new Word("nolla", "zero"));
         numberWords.add(new Word("yksi", "one"));
         numberWords.add(new Word("kaksi", "two"));
         numberWords.add(new Word("kolme", "three"));
