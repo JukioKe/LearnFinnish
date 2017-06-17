@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        TextView numbers = (TextView) findViewById(R.id.numbers);
+        TextView numbers = (TextView) findViewById(R.id.numbers_view);
 
         // Set a click listener on that View
         if (numbers != null) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.family);
+        TextView family = (TextView) findViewById(R.id.family_view);
 
         // Set a click listener on that View
         if (family != null) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Find the View that shows the colors category
-        TextView colors = (TextView) findViewById(R.id.colors);
+        TextView colors = (TextView) findViewById(R.id.colors_view);
 
         // Set a click listener on that View
         if (colors != null) {
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Find the View that shows the phrases category
-        TextView phrases = (TextView) findViewById(R.id.phrases);
+        TextView phrases = (TextView) findViewById(R.id.phrases_view);
 
         // Set a click listener on that View
         if (phrases != null) {
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Find the View that shows the sports category
-        TextView sports = (TextView) findViewById(R.id.sports);
+        TextView sports = (TextView) findViewById(R.id.sports_view);
 
         // Set a click listener on that View
         if (sports != null) {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Find the View that shows the feelings category
-        TextView feelings = (TextView) findViewById(R.id.feelings);
+        TextView feelings = (TextView) findViewById(R.id.feelings_view);
 
         // Set a click listener on that View
         if (feelings != null) {
