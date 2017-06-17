@@ -15,20 +15,21 @@ public class ColorsActivity extends AppCompatActivity {
 
         ArrayList<Word> colorWords = new ArrayList<Word>();
 
-        colorWords.add(new Word("vihreä", "green"));
-        colorWords.add(new Word("punainen", "red"));
-        colorWords.add(new Word("sininen", "blue"));
-        colorWords.add(new Word("keltainen", "yellow"));
-        colorWords.add(new Word("ruskea", "brown"));
-        colorWords.add(new Word("harmaa", "grey"));
-        colorWords.add(new Word("valkoinen", "white"));
-        colorWords.add(new Word("musta", "black"));
-        colorWords.add(new Word("purppura", "purple"));
-        colorWords.add(new Word("oranssi", "orange"));
-        colorWords.add(new Word("turkoosi", "turquoise"));
-        colorWords.add(new Word("lila", "lila"));
-        colorWords.add(new Word("hopeinen", "silver"));
-        colorWords.add(new Word("kultainen", "golden"));
+        colorWords.add(new Word("vihreä", "green", R.drawable.green));
+        colorWords.add(new Word("punainen", "red", R.drawable.color_red));
+        colorWords.add(new Word("sininen", "blue", R.drawable.color_blue));
+        colorWords.add(new Word("keltainen", "yellow", R.drawable.color_yellow));
+        colorWords.add(new Word("ruskea", "brown", R.drawable.color_brown));
+        colorWords.add(new Word("harmaa", "grey", R.drawable.color_gray));
+        colorWords.add(new Word("purppura", "purple", R.drawable.color_purple));
+        colorWords.add(new Word("oranssi", "orange", R.drawable.color_orange));
+        colorWords.add(new Word("turkoosi", "turquoise", R.drawable.color_turquoise));
+        colorWords.add(new Word("lila", "lila", R.drawable.color_lila));
+        colorWords.add(new Word("hopeinen", "silver", R.drawable.color_gray));
+        colorWords.add(new Word("kultainen", "golden", R.drawable.color_golden));
+        colorWords.add(new Word("valkoinen", "white", R.drawable.color_white));
+        colorWords.add(new Word("musta", "black", R.drawable.color_black));
+
 
 
         WordAdapter adapter = new WordAdapter(this, colorWords);
