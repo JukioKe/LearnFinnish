@@ -7,28 +7,38 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_width="@dimen/list_item_height2"
+        android:layout_height="@dimen/list_item_height2"
+        android:padding="16dp" />
 
     <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/list_item_height2"
+        android:background="@color/category_numbers"
         android:orientation="vertical"
-        android:paddingTop="16dp">
+        android:paddingStart="16dp">
 
 
         <TextView
             android:id="@+id/fin_word"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceListItem"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             tools:text="Yksi" />
 
         <TextView
             android:id="@+id/eng_word"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceListItem"
+            android:textColor="@android:color/white"
             tools:text="One" />
 
     </LinearLayout>
