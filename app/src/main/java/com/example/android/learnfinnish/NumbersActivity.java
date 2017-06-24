@@ -41,9 +41,9 @@ public class NumbersActivity extends AppCompatActivity {
         numberWords.add(new Word("kaksikymmentä", "twenty", R.drawable.number_twenty));
 
 
-        WordAdapter adapter = new WordAdapter(this, numberWords);
+        WordAdapter adapter = new WordAdapter(this, numberWords, R.color.category_numbers);
 
-        ListView listView = (ListView) findViewById(R.id.word_list_view);
+        ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
             listView.setAdapter(adapter);

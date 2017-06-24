@@ -43,9 +43,9 @@ public class FeelingsActivity extends AppCompatActivity {
         feelingsWords.add(new Word("ylpeys", "pride", R.drawable.feeling_pride));
 
 
-        WordAdapter adapter = new WordAdapter(this, feelingsWords);
+        WordAdapter adapter = new WordAdapter(this, feelingsWords, R.color.category_feelings);
 
-        ListView listView = (ListView) findViewById(R.id.word_list_view);
+        ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
             listView.setAdapter(adapter);

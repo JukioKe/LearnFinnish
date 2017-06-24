@@ -1,6 +1,8 @@
 package com.example.android.learnfinnish;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +14,16 @@ import java.util.ArrayList;
 
 
 public class WordAdapter extends ArrayAdapter<Word> {
+    private int colorResourceId;
 
-
-    public WordAdapter(Context context, ArrayList<Word> numberList) {
+    public WordAdapter(Context context, ArrayList<Word> numberList, int colorResourceId) {
         super(context, 0, numberList);
+        this.colorResourceId = colorResourceId;
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
@@ -47,7 +51,17 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Find the ImageView in the list_item.xml layout with the ID image
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
         // Get the image resource ID from the current Word object and set the image to iconView
+        assert currentWord != null;
         iconView.setImageResource(currentWord.getImageResourceID());
+
+
+        // Set the theme color for the list item
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        // Find the color that the resource ID maps to
+        int color = ContextCompat.getColor(getContext(), colorResourceId);
+        // Set the background color of the text container View
+        textContainer.setBackgroundColor(color);
+
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView) so that it can be shown in the ListView
 

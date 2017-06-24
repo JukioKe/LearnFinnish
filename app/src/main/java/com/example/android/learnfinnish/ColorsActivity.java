@@ -31,10 +31,9 @@ public class ColorsActivity extends AppCompatActivity {
         colorWords.add(new Word("musta", "black", R.drawable.color_black));
 
 
+        WordAdapter adapter = new WordAdapter(this, colorWords, R.color.category_colors);
 
-        WordAdapter adapter = new WordAdapter(this, colorWords);
-
-        ListView listView = (ListView) findViewById(R.id.word_list_view);
+        ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
             listView.setAdapter(adapter);

@@ -41,9 +41,9 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(new Word("Paljonko kello on?", "What's the time is?", R.drawable.color_phrases));
 
 
-        WordAdapter adapter = new WordAdapter(this, phrases);
+        WordAdapter adapter = new WordAdapter(this, phrases, R.color.category_phrases);
 
-        ListView listView = (ListView) findViewById(R.id.word_list_view);
+        ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
             listView.setAdapter(adapter);

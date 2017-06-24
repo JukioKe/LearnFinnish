@@ -42,9 +42,9 @@ public class FamilyMembersActivity extends AppCompatActivity {
         familyWords.add(new Word("sukulainen", "relative", R.drawable.family_relative));
 
 
-        WordAdapter adapter = new WordAdapter(this, familyWords);
+        WordAdapter adapter = new WordAdapter(this, familyWords, R.color.category_family);
 
-        ListView listView = (ListView) findViewById(R.id.word_list_view);
+        ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
             listView.setAdapter(adapter);
