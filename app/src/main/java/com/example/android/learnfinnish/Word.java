@@ -5,7 +5,15 @@ package com.example.android.learnfinnish;
 public class Word {
     private String finTransalation;
     private String engTranslation;
+    private int audioResourceID;
     private int imageResourceID;
+
+    public Word(String finTransalation, String engTranslation, int imageResourceID, int audioResourceID) {
+        this.finTransalation = finTransalation;
+        this.engTranslation = engTranslation;
+        this.imageResourceID = imageResourceID;
+        this.audioResourceID = audioResourceID;
+    }
 
     public Word(String finTransalation, String engTranslation, int imageResourceID) {
         this.finTransalation = finTransalation;
@@ -29,4 +37,9 @@ public class Word {
     public int getImageResourceID() {
         return imageResourceID;
     }
+
+    public int getAudioResourceID() {
+        return audioResourceID;
+    }
+
 }
