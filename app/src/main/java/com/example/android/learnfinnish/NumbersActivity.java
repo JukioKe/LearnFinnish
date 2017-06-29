@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -55,15 +54,15 @@ public class NumbersActivity extends AppCompatActivity {
             listView.setAdapter(adapter);
         }
 
+        // Set a click listener to play the audio when the list item is clicked on listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        assert listView != null;
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                int audioResourceID = numberWords.get(position).getAudioResourceID();
-                mediaPlayer = MediaPlayer.create(NumbersActivity.this, audioResourceID);
+                Word word = numberWords.get(position);
+                mediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceID());
                 mediaPlayer.start();
 
-                Toast.makeText(NumbersActivity.this, "Toimiiko!!!!", Toast.LENGTH_SHORT).show();
 
             }
         });
