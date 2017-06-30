@@ -22,4 +22,10 @@
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_phrases">"Phrases                                        Lauseita"</string>
 
+    <!-- Content description string -->
+    <string name="play_icon_image">Play icon image</string>
+
+    <!-- Content description string -->
+    <string name="description_image">description image</string>
+
 </resources>
