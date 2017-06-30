@@ -21,9 +21,13 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+
+        //Create a list of Word objects
         final ArrayList<Word> numberWords = new ArrayList<>();
 
-        numberWords.add(new Word("nolla", "zero", R.drawable.number_zero));
+
+        //Create all Word objects for Numbers category
+        numberWords.add(new Word("nolla", "zero", R.drawable.number_zero, R.raw.number_zero));
         numberWords.add(new Word("yksi", "one", R.drawable.number_one, R.raw.number_one));
         numberWords.add(new Word("kaksi", "two", R.drawable.number_two, R.raw.number_two));
         numberWords.add(new Word("kolme", "three", R.drawable.number_three, R.raw.number_three));
@@ -34,18 +38,19 @@ public class NumbersActivity extends AppCompatActivity {
         numberWords.add(new Word("kahdeksan", "eight", R.drawable.number_eight, R.raw.number_eight));
         numberWords.add(new Word("yhdeksän", "nine", R.drawable.number_nine, R.raw.number_nine));
         numberWords.add(new Word("kymmenen", "ten", R.drawable.number_ten, R.raw.number_ten));
-        numberWords.add(new Word("yksitoista", "eleven", R.drawable.number_eleven));
-        numberWords.add(new Word("kaksitoista", "twelve", R.drawable.number_twelve));
-        numberWords.add(new Word("kolmetoista", "thirteen", R.drawable.number_thirteen));
-        numberWords.add(new Word("neljätoista", "fourteen", R.drawable.number_fourteen));
-        numberWords.add(new Word("viisitoista", "fiveteen", R.drawable.number_fiveteen));
-        numberWords.add(new Word("kuusitoista", "sixteen", R.drawable.number_sixteen));
-        numberWords.add(new Word("seitsemäntoista", "seventeen", R.drawable.number_seventeen));
-        numberWords.add(new Word("kahdeksantoista", "eighteen", R.drawable.number_eighteen));
-        numberWords.add(new Word("yhdeksäntoista", "nineteen", R.drawable.number_nineteen));
-        numberWords.add(new Word("kaksikymmentä", "twenty", R.drawable.number_twenty));
+        numberWords.add(new Word("yksitoista", "eleven", R.drawable.number_eleven, R.raw.number_eleven));
+        numberWords.add(new Word("kaksitoista", "twelve", R.drawable.number_twelve, R.raw.number_twelve));
+        numberWords.add(new Word("kolmetoista", "thirteen", R.drawable.number_thirteen, R.raw.number_thirteen));
+        numberWords.add(new Word("neljätoista", "fourteen", R.drawable.number_fourteen, R.raw.number_fourteen));
+        numberWords.add(new Word("viisitoista", "fiveteen", R.drawable.number_fiveteen, R.raw.number_fiveteen));
+        numberWords.add(new Word("kuusitoista", "sixteen", R.drawable.number_sixteen, R.raw.number_sixteen));
+        numberWords.add(new Word("seitsemäntoista", "seventeen", R.drawable.number_seventeen, R.raw.number_seventeen));
+        numberWords.add(new Word("kahdeksantoista", "eighteen", R.drawable.number_eighteen, R.raw.number_eighteen));
+        numberWords.add(new Word("yhdeksäntoista", "nineteen", R.drawable.number_nineteen, R.raw.number_nineteen));
+        numberWords.add(new Word("kaksikymmentä", "twenty", R.drawable.number_twenty, R.raw.number_twenty));
 
 
+        //Create new WordAdapter and give this(NumbersActivity) context
         WordAdapter adapter = new WordAdapter(this, numberWords, R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.word_list);
