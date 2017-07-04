@@ -15,7 +15,7 @@ public class NumbersActivity extends AppCompatActivity {
 
     //This listener gets triggered when the media player has completed playing the audio file.
 
-    private MediaPlayer.OnCompletionListener kompletionKuuntelija = new MediaPlayer.OnCompletionListener() {
+    private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
             releaseMediaPlayer();
@@ -82,7 +82,7 @@ public class NumbersActivity extends AppCompatActivity {
                 mediaPlayer.start();
 
                 //Set listener to find out when playback is completed to release the media player
-                mediaPlayer.setOnCompletionListener(kompletionKuuntelija);
+                mediaPlayer.setOnCompletionListener(completionListener);
             }
         });
     }
@@ -102,4 +102,10 @@ public class NumbersActivity extends AppCompatActivity {
         }
     }
 
+    // Release resources when activity is stopped
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+    }
 }
