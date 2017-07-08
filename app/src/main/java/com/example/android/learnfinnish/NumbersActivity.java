@@ -16,7 +16,7 @@ public class NumbersActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private AudioManager audioManager;
 
-    //This listener gets triggered when the media player has completed playing the audio file.
+    //This listener gets triggered when Audio Focus state changes
     private AudioManager.OnAudioFocusChangeListener audioFocusChangeListener =
             new AudioManager.OnAudioFocusChangeListener() {
                 public void onAudioFocusChange(int focusChange) {
@@ -44,6 +44,8 @@ public class NumbersActivity extends AppCompatActivity {
                     }
                 }
             };
+
+    //This listener gets triggered when the media player has completed playing the audio file.
     private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
@@ -106,19 +108,19 @@ public class NumbersActivity extends AppCompatActivity {
                 // play a different sound file
                 releaseMediaPlayer();
 
-                Word word = numberWords.get(position);
+                //Get and store just clicked word object temporarily.
+                Word wordJustClicked = numberWords.get(position);
 
                 // Request audio focus so in order to play the audio file. The app needs to play a
                 // short audio file, so we will request audio focus with a short amount of time
                 // with AUDIOFOCUS_GAIN_TRANSIENT.
-
                 int audioFocusResult = audioManager.requestAudioFocus(audioFocusChangeListener,
                         AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
                 if (audioFocusResult == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     // Create and setup the MediaPlayer for the audio resource associated
                     // with the current word
-                    mediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceID());
+                    mediaPlayer = MediaPlayer.create(NumbersActivity.this, wordJustClicked.getAudioResourceID());
                     mediaPlayer.start();
 
                     //Set listener to find out when playback is completed to release the media player
