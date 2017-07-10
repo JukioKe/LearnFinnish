@@ -58,13 +58,11 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-
         //Create and setup audio manager to request audio focus
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        //Create a list of Word objects
+        //Create a list for Word objects
         final ArrayList<Word> numberWords = new ArrayList<>();
-
 
         //Create all Word objects for Numbers category
         numberWords.add(new Word("nolla", "zero", R.drawable.number_zero, R.raw.number_zero));
@@ -93,6 +91,7 @@ public class NumbersActivity extends AppCompatActivity {
         //Create new WordAdapter and give this(NumbersActivity) context
         WordAdapter adapter = new WordAdapter(this, numberWords, R.color.category_numbers);
 
+        //Create a ListView object and allocate correct XML-layout to it
         ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
@@ -156,4 +155,5 @@ public class NumbersActivity extends AppCompatActivity {
         super.onStop();
         releaseMediaPlayer();
     }
+
 }

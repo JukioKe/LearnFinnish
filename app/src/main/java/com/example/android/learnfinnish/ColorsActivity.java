@@ -15,6 +15,7 @@ public class ColorsActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
     private AudioManager audioManager;
+
     //This listener gets triggered when Audio Focus state changes
     private AudioManager.OnAudioFocusChangeListener audioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
         @Override
@@ -43,6 +44,7 @@ public class ColorsActivity extends AppCompatActivity {
             }
         }
     };
+
     //This listener gets triggered when the media player has completed playing the audio file.
     private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
         @Override
@@ -59,8 +61,10 @@ public class ColorsActivity extends AppCompatActivity {
         //Create and setup audio manager to request audio focus
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
+        //Create a list for Word objects
         final ArrayList<Word> colorWords = new ArrayList<Word>();
 
+        //Create all Word objects for Colors category
         colorWords.add(new Word("vihreä", "green", R.drawable.color_green, R.raw.number_zero));
         colorWords.add(new Word("punainen", "red", R.drawable.color_red, R.raw.number_zero));
         colorWords.add(new Word("sininen", "blue", R.drawable.color_blue, R.raw.number_zero));
@@ -76,9 +80,10 @@ public class ColorsActivity extends AppCompatActivity {
         colorWords.add(new Word("valkoinen", "white", R.drawable.color_white, R.raw.number_zero));
         colorWords.add(new Word("musta", "black", R.drawable.color_black, R.raw.number_zero));
 
-
+        //Create new WordAdapter and give this(NumbersActivity) context
         WordAdapter adapter = new WordAdapter(this, colorWords, R.color.category_colors);
 
+        //Create a ListView object and allocate correct XML-layout to it
         ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {

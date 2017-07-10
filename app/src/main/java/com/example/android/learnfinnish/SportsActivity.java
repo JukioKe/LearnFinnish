@@ -61,9 +61,10 @@ public class SportsActivity extends AppCompatActivity {
         //Create and setup audio manager to request audio focus
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
+        //Create a list for Word objects
         final ArrayList<Word> sportWords = new ArrayList<Word>();
 
-
+        //Create all Word objects for Sports category
         sportWords.add(new Word("joukkue", "team", R.drawable.sports_team, R.raw.number_zero));
         sportWords.add(new Word("pelata", "play", R.drawable.sports_play, R.raw.number_zero));
         sportWords.add(new Word("voitto", "victory", R.drawable.sports_trophy, R.raw.number_zero));
@@ -88,9 +89,10 @@ public class SportsActivity extends AppCompatActivity {
         sportWords.add(new Word("laukaise, vedä", "shoot", R.drawable.sports_shoot, R.raw.number_zero));
         sportWords.add(new Word("kunto", "fitness", R.drawable.sports_fitness, R.raw.number_zero));
 
-
+        //Create new WordAdapter and give this(SportsActivity) context
         WordAdapter adapter = new WordAdapter(this, sportWords, R.color.category_sports);
 
+        //Create a ListView object and allocate correct XML-layout to it
         ListView listView = (ListView) findViewById(R.id.word_list);
 
         if (listView != null) {
@@ -128,7 +130,6 @@ public class SportsActivity extends AppCompatActivity {
         });
 
     }
-
 
     //Clean up the media player by releasing its resources.
     private void releaseMediaPlayer() {
