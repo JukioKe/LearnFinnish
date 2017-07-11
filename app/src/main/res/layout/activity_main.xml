@@ -9,12 +9,17 @@
     android:orientation="vertical"
     tools:context="com.example.android.learnfinnish.MainActivity">
 
-    <TextView
-        android:id="@+id/numbers_view"
-        style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
-        android:text="@string/category_numbers" />
+    <FrameLayout
+        style="@style/FrameLayoutStyle"
+        android:background="@color/category_numbers">
 
+        <TextView
+            android:id="@+id/numbers_view"
+            style="@style/CategoryStyleTwo"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_numbers" />
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/colors_view"
