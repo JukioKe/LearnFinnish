@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,41 +14,58 @@
 
         <TextView
             android:id="@+id/numbers_view"
-            style="@style/CategoryStyleTwo"
-            android:background="?android:attr/selectableItemBackground"
+            style="@style/CategoryStyle"
             android:text="@string/category_numbers" />
-
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/colors_view"
-        style="@style/CategoryStyle"
-        android:background="@color/category_colors"
-        android:text="@string/category_colors" />
+    <FrameLayout
+        style="@style/FrameLayoutStyle"
+        android:background="@color/category_colors">
 
-    <TextView
-        android:id="@+id/sports_view"
-        style="@style/CategoryStyle"
-        android:background="@color/category_sports"
-        android:text="@string/category_sports" />
+        <TextView
+            android:id="@+id/colors_view"
+            style="@style/CategoryStyle"
+            android:text="@string/category_colors" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/feelings_view"
-        style="@style/CategoryStyle"
-        android:background="@color/category_feelings"
-        android:text="@string/category_feelings" />
+    <FrameLayout
+        style="@style/FrameLayoutStyle"
+        android:background="@color/category_sports">
 
-    <TextView
-        android:id="@+id/family_view"
-        style="@style/CategoryStyle"
-        android:background="@color/category_family"
-        android:text="@string/category_family" />
+        <TextView
+            android:id="@+id/sports_view"
+            style="@style/CategoryStyle"
+            android:text="@string/category_sports" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/phrases_view"
-        style="@style/CategoryStyle"
-        android:background="@color/category_phrases"
-        android:text="@string/category_phrases" />
+    <FrameLayout
+        style="@style/FrameLayoutStyle"
+        android:background="@color/category_feelings">
 
+        <TextView
+            android:id="@+id/feelings_view"
+            style="@style/CategoryStyle"
+            android:text="@string/category_feelings" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/FrameLayoutStyle"
+        android:background="@color/category_family">
+
+        <TextView
+            android:id="@+id/family_view"
+            style="@style/CategoryStyle"
+            android:text="@string/category_family" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/FrameLayoutStyle"
+        android:background="@color/category_phrases">
+
+        <TextView
+            android:id="@+id/phrases_view"
+            style="@style/CategoryStyle"
+            android:text="@string/category_phrases" />
+    </FrameLayout>
 
 </LinearLayout>
