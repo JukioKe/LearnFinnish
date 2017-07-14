@@ -14,7 +14,7 @@
     <string name="category_sports">"Sports                                            Urheilu"</string>
 
     <!-- Category name for the vocabulary words for feelings [CHAR LIMIT=20] -->
-    <string name="category_feelings">"Feelings                             Tuntemukset"</string>
+    <string name="category_feelings">"Feelings                           Tuntemukset"</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">"Family Members      Perheen jäsenet"</string>

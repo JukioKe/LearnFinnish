@@ -88,7 +88,7 @@ public class NumbersActivity extends AppCompatActivity {
         numberWords.add(new Word("kaksikymmentä", "twenty", R.drawable.number_twenty, R.raw.number_twenty));
 
 
-        //Create new WordAdapter and give this(NumbersActivity) context
+        //Create new WordAdapter and give this(NumbersActivity) as a context
         WordAdapter adapter = new WordAdapter(this, numberWords, R.color.category_numbers);
 
         //Create a ListView object and allocate correct XML-layout to it
