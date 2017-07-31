@@ -18,22 +18,28 @@
         </activity>
         <activity
             android:name="com.example.android.learnfinnish.NumbersActivity"
-            android:label="@string/category_numbers" />
+            android:label="@string/category_numbers"
+            android:parentActivityName="com.example.android.learnfinnish.MainActivity" />
         <activity
             android:name="com.example.android.learnfinnish.FamilyMembersActivity"
-            android:label="@string/category_family" />
+            android:label="@string/category_family"
+            android:parentActivityName="com.example.android.learnfinnish.MainActivity" />
         <activity
             android:name="com.example.android.learnfinnish.ColorsActivity"
-            android:label="@string/category_colors" />
+            android:label="@string/category_colors"
+            android:parentActivityName="com.example.android.learnfinnish.MainActivity" />
         <activity
             android:name="com.example.android.learnfinnish.SportsActivity"
-            android:label="@string/category_sports" />
+            android:label="@string/category_sports"
+            android:parentActivityName="com.example.android.learnfinnish.MainActivity" />
         <activity
             android:name="com.example.android.learnfinnish.FeelingsActivity"
-            android:label="@string/category_feelings" />
+            android:label="@string/category_feelings"
+            android:parentActivityName="com.example.android.learnfinnish.MainActivity" />
         <activity
             android:name="com.example.android.learnfinnish.PhrasesActivity"
-            android:label="@string/category_phrases" />
+            android:label="@string/category_phrases"
+            android:parentActivityName="com.example.android.learnfinnish.MainActivity" />
     </application>
 
 </manifest>

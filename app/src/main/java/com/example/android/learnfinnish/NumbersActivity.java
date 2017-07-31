@@ -58,6 +58,12 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+        /*   // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);   */
+
         //Create and setup audio manager to request audio focus
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
