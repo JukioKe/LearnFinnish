@@ -5,22 +5,22 @@
 
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">"Colors                                                 Värit"</string>
+    <string name="category_colors">"Colors                                              Värit"</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">"Numbers                                      Numerot"</string>
+    <string name="category_numbers">"Numbers                                    Numerot"</string>
 
     <!-- Category name for the vocabulary words for sports [CHAR LIMIT=20] -->
-    <string name="category_sports">"Sports                                            Urheilu"</string>
+    <string name="category_sports">"Sports                                          Urheilu"</string>
 
     <!-- Category name for the vocabulary words for feelings [CHAR LIMIT=20] -->
-    <string name="category_feelings">"Feelings                           Tuntemukset"</string>
+    <string name="category_feelings">"Feelings                          Tuntemukset"</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">"Family Members      Perheen jäsenet"</string>
+    <string name="category_family">"Family Members   Perheen jäsenet"</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">"Phrases                                        Lauseita"</string>
+    <string name="category_phrases">"Phrases                                     Lauseita"</string>
 
     <!-- Content description string -->
     <string name="play_icon_image">Play icon image</string>

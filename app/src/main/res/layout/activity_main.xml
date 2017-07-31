@@ -16,6 +16,7 @@
             android:id="@+id/numbers_view"
             style="@style/CategoryStyle"
             android:text="@string/category_numbers" />
+
     </FrameLayout>
 
     <FrameLayout
