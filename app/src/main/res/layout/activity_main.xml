@@ -9,64 +9,142 @@
     tools:context="com.example.android.learnfinnish.MainActivity">
 
     <FrameLayout
+        android:id="@+id/number_frame_view"
         style="@style/FrameLayoutStyle"
         android:background="@color/category_numbers">
 
-        <TextView
-            android:id="@+id/numbers_view"
-            style="@style/CategoryStyle"
-            android:text="@string/category_numbers" />
+        <RelativeLayout
+            android:id="@+id/numbers_layout_view"
+            style="@style/RelativeLayoutStyle">
 
+            <TextView
+                android:id="@+id/numbers_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentStart="true"
+                android:text="@string/numbers" />
+
+            <TextView
+                android:id="@+id/numerot_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentEnd="true"
+                android:text="@string/numerot" />
+
+        </RelativeLayout>
     </FrameLayout>
 
     <FrameLayout
         style="@style/FrameLayoutStyle"
         android:background="@color/category_colors">
 
-        <TextView
-            android:id="@+id/colors_view"
-            style="@style/CategoryStyle"
-            android:text="@string/category_colors" />
+        <RelativeLayout
+            android:id="@+id/colors_layout_view"
+            style="@style/RelativeLayoutStyle">
+
+            <TextView
+                android:id="@+id/colors_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentStart="true"
+                android:text="@string/colors" />
+
+            <TextView
+                android:id="@+id/varit_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentEnd="true"
+                android:text="@string/varit" />
+
+        </RelativeLayout>
     </FrameLayout>
 
     <FrameLayout
         style="@style/FrameLayoutStyle"
         android:background="@color/category_sports">
 
-        <TextView
-            android:id="@+id/sports_view"
-            style="@style/CategoryStyle"
-            android:text="@string/category_sports" />
+        <RelativeLayout
+            android:id="@+id/sports_layout_view"
+            style="@style/RelativeLayoutStyle">
+
+            <TextView
+                android:id="@+id/sports_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentStart="true"
+                android:text="@string/sports" />
+
+            <TextView
+                android:id="@+id/urheilu_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentEnd="true"
+                android:text="@string/urheilu" />
+
+        </RelativeLayout>
     </FrameLayout>
 
     <FrameLayout
         style="@style/FrameLayoutStyle"
         android:background="@color/category_feelings">
 
-        <TextView
-            android:id="@+id/feelings_view"
-            style="@style/CategoryStyle"
-            android:text="@string/category_feelings" />
+        <RelativeLayout
+            android:id="@+id/feelings_layout_view"
+            style="@style/RelativeLayoutStyle">
+
+            <TextView
+                android:id="@+id/feelings_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentStart="true"
+                android:text="@string/feelings" />
+
+            <TextView
+                android:id="@+id/tuntemukset_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentEnd="true"
+                android:text="@string/tuntemukset" />
+
+        </RelativeLayout>
     </FrameLayout>
 
     <FrameLayout
         style="@style/FrameLayoutStyle"
         android:background="@color/category_family">
 
-        <TextView
-            android:id="@+id/family_view"
-            style="@style/CategoryStyle"
-            android:text="@string/category_family" />
+        <RelativeLayout
+            android:id="@+id/family_layout_view"
+            style="@style/RelativeLayoutStyle">
+
+            <TextView
+                android:id="@+id/family_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentStart="true"
+                android:text="@string/family_members" />
+
+            <TextView
+                android:id="@+id/perheen_jasenet_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentEnd="true"
+                android:text="@string/perheen_jasenet" />
+
+        </RelativeLayout>
     </FrameLayout>
 
     <FrameLayout
         style="@style/FrameLayoutStyle"
         android:background="@color/category_phrases">
 
-        <TextView
-            android:id="@+id/phrases_view"
-            style="@style/CategoryStyle"
-            android:text="@string/category_phrases" />
+        <RelativeLayout
+            android:id="@+id/phrases_layout_view"
+            style="@style/RelativeLayoutStyle">
+
+            <TextView
+                android:id="@+id/phrases_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentStart="true"
+                android:text="@string/phrases" />
+
+            <TextView
+                android:id="@+id/lauseita_view"
+                style="@style/CategoryStyle"
+                android:layout_alignParentEnd="true"
+                android:text="@string/lauseita" />
+
+        </RelativeLayout>
     </FrameLayout>
 
 </LinearLayout>
