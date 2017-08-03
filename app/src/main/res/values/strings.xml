@@ -2,30 +2,30 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Learn Finnish!</string>
 
-
-
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">"Colors                                              Värit"</string>
-
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">"Numbers                                    Numerot"</string>
-
-    <!-- Category name for the vocabulary words for sports [CHAR LIMIT=20] -->
-    <string name="category_sports">"Sports                                          Urheilu"</string>
-
-    <!-- Category name for the vocabulary words for feelings [CHAR LIMIT=20] -->
-    <string name="category_feelings">"Feelings                          Tuntemukset"</string>
-
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">"Family Members   Perheen jäsenet"</string>
-
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">"Phrases                                     Lauseita"</string>
+    <!-- Category names for the vocabulary words [CHAR LIMIT=20] -->
+    <string name="category_colors">"Colors  -  Värit"</string>
+    <string name="category_numbers">"Numbers  -  Numerot"</string>
+    <string name="category_sports">"Sports  -  Urheilu"</string>
+    <string name="category_feelings">"Feelings  -  Tuntemukset"</string>
+    <string name="category_family">"Family Members  -  Perheen jäsenet"</string>
+    <string name="category_phrases">"Phrases  -  Lauseita"</string>
 
     <!-- Content description string -->
     <string name="play_icon_image">Play icon image</string>
 
-    <!-- Content description string -->
+    <!-- MainActivity Strings -->
     <string name="description_image">description image</string>
+    <string name="numbers">Numbers</string>
+    <string name="numerot">Numerot</string>
+    <string name="colors">Colors</string>
+    <string name="varit">Värit</string>
+    <string name="sports">Sports</string>
+    <string name="urheilu">Urheilu</string>
+    <string name="feelings">Feelings</string>
+    <string name="tuntemukset">Tuntemukset</string>
+    <string name="family_members">Family Members</string>
+    <string name="perheen_jasenet">Perheen Jäsenet</string>
+    <string name="phrases">Phrases</string>
+    <string name="lauseita">Lauseita</string>
 
 </resources>

@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
+
         // Find the View that shows the numbers category
-        TextView numbers = (TextView) findViewById(R.id.numbers_view);
+        RelativeLayout numbers = (RelativeLayout) findViewById(R.id.numbers_layout_view);
 
         // Set a click listener on that View
         if (numbers != null) {
@@ -31,23 +32,9 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.family_view);
-
-        // Set a click listener on that View
-        if (family != null) {
-            family.setOnClickListener(new View.OnClickListener() {
-                // The code in this method will be executed when the numbers View is clicked on.
-                @Override
-                public void onClick(View view) {
-                    Intent familyIntent = new Intent(MainActivity.this, FamilyMembersActivity.class);
-                    startActivity(familyIntent);
-                }
-            });
-        }
 
         // Find the View that shows the colors category
-        TextView colors = (TextView) findViewById(R.id.colors_view);
+        RelativeLayout colors = (RelativeLayout) findViewById(R.id.colors_layout_view);
 
         // Set a click listener on that View
         if (colors != null) {
@@ -61,23 +48,9 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        // Find the View that shows the phrases category
-        TextView phrases = (TextView) findViewById(R.id.phrases_view);
-
-        // Set a click listener on that View
-        if (phrases != null) {
-            phrases.setOnClickListener(new View.OnClickListener() {
-                // The code in this method will be executed when the numbers View is clicked on.
-                @Override
-                public void onClick(View view) {
-                    Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-                    startActivity(phrasesIntent);
-                }
-            });
-        }
 
         // Find the View that shows the sports category
-        TextView sports = (TextView) findViewById(R.id.sports_view);
+        RelativeLayout sports = (RelativeLayout) findViewById(R.id.sports_layout_view);
 
         // Set a click listener on that View
         if (sports != null) {
@@ -91,8 +64,9 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+
         // Find the View that shows the feelings category
-        TextView feelings = (TextView) findViewById(R.id.feelings_view);
+        RelativeLayout feelings = (RelativeLayout) findViewById(R.id.feelings_layout_view);
 
         // Set a click listener on that View
         if (feelings != null) {
@@ -102,6 +76,38 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     Intent feelingsIntent = new Intent(MainActivity.this, FeelingsActivity.class);
                     startActivity(feelingsIntent);
+                }
+            });
+        }
+
+
+        // Find the View that shows the family category
+        RelativeLayout family = (RelativeLayout) findViewById(R.id.family_layout_view);
+
+        // Set a click listener on that View
+        if (family != null) {
+            family.setOnClickListener(new View.OnClickListener() {
+                // The code in this method will be executed when the numbers View is clicked on.
+                @Override
+                public void onClick(View view) {
+                    Intent familyIntent = new Intent(MainActivity.this, FamilyMembersActivity.class);
+                    startActivity(familyIntent);
+                }
+            });
+        }
+
+
+        // Find the View that shows the phrases category
+        RelativeLayout phrases = (RelativeLayout) findViewById(R.id.phrases_layout_view);
+
+        // Set a click listener on that View
+        if (phrases != null) {
+            phrases.setOnClickListener(new View.OnClickListener() {
+                // The code in this method will be executed when the numbers View is clicked on.
+                @Override
+                public void onClick(View view) {
+                    Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                    startActivity(phrasesIntent);
                 }
             });
         }
